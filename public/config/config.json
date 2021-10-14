@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xfac12d04f3519b2230569fef6c57ebbb714d7db8",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0xfac12d04f3519b2230569fef6c57ebbb714d7db8",
+  "NETWORK": {
+    "NAME": "Rinkeby",
+    "SYMBOL": "Eth",
+    "ID": 4
+  },
+  "NFT_NAME": "#NuncaMas",
+  "SYMBOL": "NM30000",
+  "MAX_SUPPLY": 30000,
+  "WEI_COST": 75000000000000000,
+  "DISPLAY_COST": 3,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/nunca-mas",
+  "SHOW_BACKGROUND": true
+}
