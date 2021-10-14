@@ -120,6 +120,38 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
+  const addTokenToWallet= () => {
+    const tokenDecimals = 0;
+    const tokenImage = 'https://www.conreco.com.ar/abuelas-plaza-mayo/output-nft/hidden.png';
+
+    try {
+
+        // wasAdded is a boolean. Like any RPC method, an error may be thrown.
+      window.ethereum.request({
+          method: 'wallet_watchAsset',
+          params: {
+              type: 'ERC20', // Initially only supports ERC20, but eventually more!
+              options: {
+                  address: CONFIG.CONTRACT_ADDRESS, // The address that the token is at.
+                  symbol: CONFIG.SYMBOL, // A ticker symbol or shorthand, up to 5 chars.
+                  decimals: tokenDecimals, // The number of decimals in the token
+                  image: tokenImage, // A string url of the token logo
+              }
+          }
+        }).then(() => {
+            console.log('Thanks for your interest!');
+            window.location.reload()
+        }).catch(() => {
+            console.log('Your loss!');
+            window.location.reload()
+        });
+
+
+    } catch (error) {
+        console.log(error);
+    }
+  }
+
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
@@ -272,6 +304,16 @@ function App() {
                 >
                   Excluyendo gastos por transaccion / Excluding gas fees.
                 </s.TextDescription>
+                <s.SpacerSmall />
+                <StyledButton
+                  onClick={(e) => {
+                    e.preventDefault();
+                    dispatch(addTokenToWallet);
+                    getData();
+                  }}
+                >
+                  Add to Metamask
+                </StyledButton>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
