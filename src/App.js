@@ -252,6 +252,21 @@ function App() {
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
+          <s.SpacerLarge />
+            <StyledImg alt="Polygon Network" src="https://mejorsitiobitcoin.com/wp-content/uploads/2021/09/Como-conectar-Metamask-a-Polygon-Mainnet-800x445.jpg" />
+          <s.SpacerLarge />
+          <s.TextDescription
+              style={{
+                textAlign: "center",
+                color: "var(--primary-text)",
+              }}
+            >
+              <StyledLink target={"_blank"} href="https://academia.defilatam.com/billeteras/polygon/metamask/anadir-polygon-a-metamask">
+                How to add Polygon Network to Metamask
+              </StyledLink>
+            </s.TextDescription>
+            <s.SpacerSmall />
+
             <s.TextTitle
               style={{
                 textAlign: "center",
