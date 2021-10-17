@@ -1,12 +1,12 @@
 {
-  "CONTRACT_ADDRESS": "0xfac12d04f3519b2230569fef6c57ebbb714d7db8",
-  "SCAN_LINK": "https://polygonscan.com/address/0x3c2c82868f682C0A26FDF779C1F36dc753532a07#code",
+  "CONTRACT_ADDRESS": "0x1848D0AA5BD1ec3e74779067fAA1f9ed2d114569",
+  "SCAN_LINK": "https://polygonscan.com/address/0x1848D0AA5BD1ec3e74779067fAA1f9ed2d114569#code",
   "NETWORK": {
     "NAME": "Polygon",
     "SYMBOL": "MATIC",
     "ID": 137
   },
-  "NFT_NAME": "#NuncaMas",
+  "NFT_NAME": "NuncaMas",
   "SYMBOL": "NM30000",
   "MAX_SUPPLY": 30000,
   "WEI_COST": 3000000000000000000,
